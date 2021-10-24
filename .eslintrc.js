@@ -16,6 +16,7 @@ module.exports = {
     "prettier",
   ],
   rules: {
+    "no-var": error,
     "no-undef": "error",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
