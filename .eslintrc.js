@@ -8,12 +8,21 @@ module.exports = {
     sourceType: "module",
   },
   plugins: [],
-  extends: ["plugin:react/recomended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+  ],
   rules: {
-    semi: "error",
-    quotes: "error",
     "no-undef": "error",
     "react/prop-types": "off",
     "react/jsx-props-no-spreading": "off",
+  },
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
 };
